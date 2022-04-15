@@ -21,3 +21,6 @@ mkdir django-project
 
 8. create a project 
 django-admin startproject django-app
+
+9. run django server 
+python manage.py runserver
