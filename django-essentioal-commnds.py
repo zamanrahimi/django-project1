@@ -15,3 +15,9 @@ py -m venv django-project-env
 
 6. install django in the created enviroment 
 pip install django
+
+7. create a project folder alongside django-project-env
+mkdir django-project
+
+8. create a project 
+django-admin startproject django-app
