@@ -17,5 +17,7 @@ from django.contrib import admin
 from django.urls import path
 
 urlpatterns = [
+    # register your app url here in project urls.py 
+    path('', include('calc.urls')),
     path('admin/', admin.site.urls),
 ]
