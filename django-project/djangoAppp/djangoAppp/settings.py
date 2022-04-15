@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'calc',
 ]
 
 MIDDLEWARE = [
@@ -58,7 +59,8 @@ TEMPLATES = [
         # register created templates in settings.py
         'DIRS': [
             os.path.join(BASE_DIR, 'templates/calcTmp'),
-            os.path.join(BASE_DIR, 'templates/bootstrap')
+            os.path.join(BASE_DIR, 'calc/static'),
+            os.path.join(BASE_DIR, 'boot'),
         ],
         'APP_DIRS': True,
         'OPTIONS': {

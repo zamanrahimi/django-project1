@@ -1,1 +1,40 @@
-<h1>Hello from home.html in {{name}} application</h1>
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+  <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+  <script src="{% static 'js/bootstrap.js' %}"></script>
+
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1 class="test1">My First Bootstrap Page1</h1>
+  <p>Resize this responsive page to see the effect!</p> 
+</div>
+  
+
+<div class="container">
+	
+	<div class="row">
+
+		<div class="col-lg-4 h1">Column1</div>
+		<div class="col-lg-4 h2">Column2</div>
+		<div class="col-lg-4 h3">Column3</div>
+
+		
+	</div>
+
+</div>
+
+
+</body>
+</html>
