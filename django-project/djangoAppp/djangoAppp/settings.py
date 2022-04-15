@@ -56,7 +56,10 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         # register created templates in settings.py
-        'DIRS': [os.path.join(BASE_DIR, 'templates/calcTmp')],
+        'DIRS': [
+            os.path.join(BASE_DIR, 'templates/calcTmp'),
+            os.path.join(BASE_DIR, 'templates/bootstrap')
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
