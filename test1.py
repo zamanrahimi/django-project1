@@ -1,1 +1,1 @@
-40 print('This is a Django/Python file for testing pupose')
+41 print('This is a Django/Python file for testing pupose')
