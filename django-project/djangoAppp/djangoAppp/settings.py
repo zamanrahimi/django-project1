@@ -54,7 +54,8 @@ ROOT_URLCONF = 'djangoAppp.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        # register created templates in settings.py
+        'DIRS': [os.path.join(BASE_DIR, 'templates/calcTmp')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
