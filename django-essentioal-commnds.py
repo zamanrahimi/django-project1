@@ -24,3 +24,7 @@ django-admin startproject django-app
 
 9. run django server 
 python manage.py runserver
+
+10. Now, create django app
+python manage.py startapp calc
+
