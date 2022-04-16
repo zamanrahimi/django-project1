@@ -4,76 +4,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap Example</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <link rel="stylesheet" href="{% static 'style.css' %}">
-  <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
-  <script src="{% static 'js/bootstrap.js' %}"></script>
+	<link rel="stylesheet" href="{% static 'style.css' %}">
+	<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+	<script src="{% static 'js/bootstrap.js' %}"></script>
 
 </head>
 <body>
 
-<div class="jumbotron text-center">
-  <h1 class="test1">My First Bootstrap Page1</h1>
-  <p>Resize this responsive page to see the effect!</p> 
-</div>
-  
-
-<div class="container">
-	
-	<div class="row">
-
-		<div class="col-lg-4 h1 text-success">Column1</div>
-		<div class="col-lg-4 h2">Column2</div>
-		<div class="col-lg-4 h3">Column3</div>
-
+	<div class="jumbotron text-center">
+		<h1 class="test1">Django Application!</h1>
 		
 	</div>
 
 
-<table class="table mt-3 table-border table-hover">
-	<thead>
-	<tr>
-		<th>ID</th>
-		<th>Name</th>
-		<th>Phone</th>
-	</tr>
-</thead>
+	<div class="container">
 
-<tbody>
+		<div class="row">
 
-	<tr>
-		<td>1</td>
-		<td>Ali</td>
-		<td>345455768</td>
-	</tr>
+			<div class="col-lg-3 text-success"></div>
+			<div class="col-lg-6">
 
-	<tr>
-		<td>1</td>
-		<td>Ali</td>
-		<td>345455768</td>
-	</tr>
+				<form action="/action_page.php">
+					<div class="mb-3 mt-3">
+						<label for="email" class="form-label">Name:</label>
+						<input type="text" class="form-control" id="email" placeholder="Enter Name" name="name">
+					</div>
+					<div class="mb-3">
+						<label for="pwd" class="form-label">Familly Name:</label>
+						<input type="text" class="form-control" id="pwd" placeholder="Enter Familly Name" name="fname">
+					</div>
 
-		<tr>
-		<td>1</td>
-		<td>Ali</td>
-		<td>345455768</td>
-	</tr>
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</form>
 
-		<tr>
-		<td>1</td>
-		<td>Ali</td>
-		<td>345455768</td>
-	</tr>	
-</tbody>
-</table>
+				<hr/>
+
+				<table class="table mt-3 table-border table-hover">
+					<thead>
+						<tr>
+							<th>ID</th>
+							<th>Name</th>
+							<th>Phone</th>
+						</tr>
+					</thead>
+
+					<tbody>
+
+						<tr>
+							<td>1</td>
+							<td>Ali</td>
+							<td>345455768</td>
+						</tr>
+
+
+					</tbody>
+				</table>
+
+			</div>
+			<div class="col-lg-3 h3"></div>
+
+
+		</div>
 
 
 
-</div>
+
+
+
+	</div>
 
 
 </body>
