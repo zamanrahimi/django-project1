@@ -10,6 +10,7 @@ urlpatterns = [
 	
 	path('', views.home),
 	path('delete/<int:id>/', views.deleteItem),
+	path('edit/<int:id>/', views.editItem),
 
 
 ]

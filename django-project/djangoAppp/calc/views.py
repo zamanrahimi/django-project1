@@ -31,3 +31,13 @@ def deleteItem(request, id):
 
 	Student.objects.filter(id=id).delete()
 	return redirect('/')
+
+
+def editItem(request, id):
+	editItem = Student.objects.get(id=id)
+	studentList = Student.objects.all()
+	editData ={
+		'editItem': editItem,
+		'studentList': studentList
+	}
+	return render(request, 'home.html', editData)

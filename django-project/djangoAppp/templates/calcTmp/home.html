@@ -28,6 +28,21 @@
 
 			<div class="col-lg-3 text-success"></div>
 			<div class="col-lg-6">
+				{% if editItem %}
+				<form action="" method="post">
+					{% csrf_token %}
+					<div class="mb-3 mt-3">
+						<label for="email" class="form-label">Name:</label>
+						<input type="text" class="form-control" id="email" placeholder="Enter Name" name="name" value="{{ editItem.name }}">
+					</div>
+					<div class="mb-3">
+						<label for="pwd" class="form-label">Familly Name:</label>
+						<input type="text" class="form-control" id="pwd" placeholder="Enter Familly Name" name="fname" value="{{ editItem.fname }}">
+					</div>
+
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</form>
+				{% else %}
 
 				<form action="" method="post">
 					{% csrf_token %}
@@ -43,6 +58,7 @@
 					<button type="submit" class="btn btn-primary">Submit</button>
 				</form>
 
+				{% endif %}
 				<hr/>
 
 				<table class="table mt-3 table-border table-hover">
@@ -62,6 +78,7 @@
 							<td>{{ st.name }}</td>
 							<td>{{ st.fname }}</td>
 							<td><a href="delete/{{ st.id }}/">Delete</a></td>
+							<td><a href="/edit/{{ st.id }}">Edit</a></td>
 						</tr>
 						{% endfor %}
 
