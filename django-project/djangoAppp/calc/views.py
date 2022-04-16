@@ -14,7 +14,7 @@ class Hero:
 		self.name = name
 		self.fname = fname
 
-
+# crud - 2
 def home(request):
 	
 	if request.method == "POST":

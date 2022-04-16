@@ -7,7 +7,7 @@ from .import views
 # Mapp / create the urls bellow 
 
 urlpatterns = [
-	
+	# crud - 2
 	path('', views.home),
 	path('delete/<int:id>/', views.deleteItem),
 	path('edit/<int:id>/', views.editItem),
