@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'calc',
+    'templates',
 ]
 
 MIDDLEWARE = [
@@ -59,8 +60,8 @@ TEMPLATES = [
         # register created templates in settings.py
         'DIRS': [
             os.path.join(BASE_DIR, 'templates/calcTmp'),
-            os.path.join(BASE_DIR, 'calc/static'),
-            os.path.join(BASE_DIR, 'boot'),
+            # os.path.join(BASE_DIR, 'static/st'),
+        
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -128,3 +129,12 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# confgiure your static files like CSS, JS, Images, others here 
+# this configuration is added later:
+# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
+STATICFILES_DIRS = [
+    BASE_DIR / "static/",
+  
+]
