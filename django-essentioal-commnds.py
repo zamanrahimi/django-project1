@@ -28,3 +28,14 @@ python manage.py runserver
 10. Now, create django app
 python manage.py startapp calc
 
+11. How to solve this error: 
+django.core.exceptions.ImproperlyConfigured: Error loading MySQLdb module.
+Did you install mysqlclient?
+
+12. solve number 11: 
+pip install pymysql
+
+then; in settings.py 
+import pymysql
+
+pymysql.install_as_MySQLdb()
