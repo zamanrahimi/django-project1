@@ -54,12 +54,13 @@
 					</thead>
 
 					<tbody>
-
+						{% for st in studentList %}
 						<tr>
-							<td>1</td>
+							<td>{{ st.name }}</td>
 							<td>Ali</td>
 							<td>345455768</td>
 						</tr>
+						{% endfor %}
 
 
 					</tbody>
