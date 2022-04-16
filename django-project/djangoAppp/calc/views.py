@@ -41,3 +41,11 @@ def editItem(request, id):
 		'studentList': studentList
 	}
 	return render(request, 'home.html', editData)
+
+def updateItem(request, id):
+	if request.method =='POST':
+		up = Student.objects.get(id=id)
+		up.name = request.POST['name']
+		up.fname = request.POST['fname']
+		up.save()
+		return redirect('/')
